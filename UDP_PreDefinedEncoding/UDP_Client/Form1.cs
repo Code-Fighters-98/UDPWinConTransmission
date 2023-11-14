@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Data;
 
 namespace UDP_Client
 {
@@ -26,7 +27,13 @@ namespace UDP_Client
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int id = int.Parse(textBox1.Text.ToString());
+            string name = textBox2.Text.ToString();
+            bool isMale = radioButton1.Checked;
+
+            Person person = new Person(id, name, isMale);
             
+
         }
 
         /*
