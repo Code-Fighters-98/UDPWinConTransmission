@@ -84,7 +84,6 @@ namespace UDP_Client
                 {
                     udpClient?.Close();
                 }
-                Console.Read();
             }
             catch (Exception ex)
             {
