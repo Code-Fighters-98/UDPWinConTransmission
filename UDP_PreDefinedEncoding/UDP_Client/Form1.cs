@@ -23,5 +23,44 @@ namespace UDP_Client
             radioButton1.Checked = false;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /*
+            if (args.Length < 2 || args.Length > 3)
+                throw new ArgumentException("Parameters : <Server> <Message> [<Port>]");
+
+            string server = args[0];
+            string message = args[1];
+            int port = args.Length == 3 ? int.Parse(args[2]) : 7;
+
+            byte[] FIFOBytePacket = Encoding.ASCII.GetBytes(args[1]);
+            UdpClient udpClient = null!;
+
+            try
+            {
+                udpClient = new UdpClient();
+
+                udpClient.Send(FIFOBytePacket, FIFOBytePacket.Length, server, port);
+                System.Console.WriteLine($"Sent {FIFOBytePacket.Length} bytes to the server...");
+                IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Any, 0);
+                byte[] bytes = udpClient.Receive(ref iPEndPoint);
+                Console.WriteLine("Recieved {0} bytes from {1} : {2}",bytes.Length,iPEndPoint,Encoding.ASCII.GetString(bytes,0,bytes.Length));
+            }
+            catch (SocketException se)
+            {
+                Console.WriteLine(se.ErrorCode + " : " + se.Message);
+                Environment.Exit(se.ErrorCode);
+            }
+            finally
+            {
+                udpClient?.Close();
+            }
+            Console.Read();
+         */
+
+
     }
 }
