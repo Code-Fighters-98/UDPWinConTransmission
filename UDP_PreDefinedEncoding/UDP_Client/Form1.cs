@@ -20,6 +20,7 @@ namespace UDP_Client
             label8.Text = string.Empty;
             textBox1.Clear();
             textBox2.Clear();
+            textBox3.Clear();
             radioButton1.Checked = false;
         }
 
