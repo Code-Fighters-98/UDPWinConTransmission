@@ -15,11 +15,13 @@ namespace UDP_Client
         public Form1()
         {
             InitializeComponent();
+            label6.Text = string.Empty;
+            label7.Text = string.Empty;
+            label8.Text = string.Empty;
+            textBox1.Clear();
+            textBox2.Clear();
+            radioButton1.Checked = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
